@@ -10,4 +10,9 @@
 
 @interface KCDataUtility : NSObject
 
++ (NSArray *)hourCharacters;
++ (NSArray *)minuteCharacters;
+
++ (NSArray *)characters;
+
 @end
