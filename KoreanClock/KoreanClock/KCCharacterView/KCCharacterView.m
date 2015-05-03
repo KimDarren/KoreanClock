@@ -20,6 +20,7 @@
     _characterLabel = [[UILabel alloc] init];
     _characterLabel.textAlignment = NSTextAlignmentCenter;
     _characterLabel.textColor = [UIColor darkGrayColor];
+    _characterLabel.font = [UIFont fontWithName:@"AppleSDGothicNeo-Bold" size:30];
     
     [self addSubview:_characterLabel];
     [self makeAutoLayoutConstraints];
