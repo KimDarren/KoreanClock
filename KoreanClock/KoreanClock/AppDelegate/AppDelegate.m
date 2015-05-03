@@ -24,6 +24,8 @@
     
     [self.window makeKeyAndVisible];
     
+    [UIApplication sharedApplication].idleTimerDisabled = YES;
+    
     return YES;
 }
 

@@ -26,6 +26,10 @@
 		86867A321AF6CDEB00C2EFA8 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86867A311AF6CDEB00C2EFA8 /* TodayViewController.m */; };
 		86867A341AF6CDEB00C2EFA8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86867A331AF6CDEB00C2EFA8 /* MainInterface.storyboard */; };
 		86867A371AF6CDEB00C2EFA8 /* KoreanClockWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 86867A2A1AF6CDEA00C2EFA8 /* KoreanClockWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		86867A3E1AF6CF1200C2EFA8 /* KCMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86867A3D1AF6CF1200C2EFA8 /* KCMoreViewController.m */; };
+		86867A411AF6D84E00C2EFA8 /* face01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86867A3F1AF6D84E00C2EFA8 /* face01.jpg */; };
+		86867A421AF6D84E00C2EFA8 /* face02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86867A401AF6D84E00C2EFA8 /* face02.jpg */; };
+		86867A441AF6DA5500C2EFA8 /* face03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86867A431AF6DA5500C2EFA8 /* face03.jpg */; };
 		A47A447117D35F6B5A6DA503 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97064E658F7A481890EE4A8C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +103,11 @@
 		86867A301AF6CDEB00C2EFA8 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
 		86867A311AF6CDEB00C2EFA8 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		86867A331AF6CDEB00C2EFA8 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		86867A3C1AF6CF1200C2EFA8 /* KCMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCMoreViewController.h; sourceTree = "<group>"; };
+		86867A3D1AF6CF1200C2EFA8 /* KCMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCMoreViewController.m; sourceTree = "<group>"; };
+		86867A3F1AF6D84E00C2EFA8 /* face01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face01.jpg; sourceTree = "<group>"; };
+		86867A401AF6D84E00C2EFA8 /* face02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face02.jpg; sourceTree = "<group>"; };
+		86867A431AF6DA5500C2EFA8 /* face03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face03.jpg; sourceTree = "<group>"; };
 		92D27B036FFA9A784B642CA2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		97064E658F7A481890EE4A8C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EB4B66FD862019B4E17408 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +180,7 @@
 				868679FA1AF6A07800C2EFA8 /* Utility */,
 				868679F61AF69F7D00C2EFA8 /* KCCharacterView */,
 				868679F21AF69B2C00C2EFA8 /* KCClockViewController */,
+				86867A3B1AF6CF0600C2EFA8 /* KCMoreViewController */,
 				868679E71AF69A8000C2EFA8 /* Supporting Files */,
 				868679D01AF6995900C2EFA8 /* LaunchScreen.xib */,
 			);
@@ -180,6 +190,9 @@
 		868679E71AF69A8000C2EFA8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				86867A3F1AF6D84E00C2EFA8 /* face01.jpg */,
+				86867A401AF6D84E00C2EFA8 /* face02.jpg */,
+				86867A431AF6DA5500C2EFA8 /* face03.jpg */,
 				868679E81AF69A8000C2EFA8 /* Images.xcassets */,
 				868679E91AF69A8000C2EFA8 /* Info.plist */,
 				868679EA1AF69A8000C2EFA8 /* main.m */,
@@ -279,6 +292,15 @@
 				86867A2F1AF6CDEB00C2EFA8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86867A3B1AF6CF0600C2EFA8 /* KCMoreViewController */ = {
+			isa = PBXGroup;
+			children = (
+				86867A3C1AF6CF1200C2EFA8 /* KCMoreViewController.h */,
+				86867A3D1AF6CF1200C2EFA8 /* KCMoreViewController.m */,
+			);
+			path = KCMoreViewController;
 			sourceTree = "<group>";
 		};
 		E48EB0CD101355F57DC40C31 /* Pods */ = {
@@ -415,7 +437,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				868679EC1AF69A8000C2EFA8 /* Info.plist in Resources */,
+				86867A411AF6D84E00C2EFA8 /* face01.jpg in Resources */,
 				868679EB1AF69A8000C2EFA8 /* Images.xcassets in Resources */,
+				86867A441AF6DA5500C2EFA8 /* face03.jpg in Resources */,
+				86867A421AF6D84E00C2EFA8 /* face02.jpg in Resources */,
 				868679D21AF6995900C2EFA8 /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +516,7 @@
 				868679FD1AF6A08400C2EFA8 /* KCDataUtility.m in Sources */,
 				868679F11AF69AE300C2EFA8 /* AppDelegate.m in Sources */,
 				868679F91AF69F9300C2EFA8 /* KCCharacterView.m in Sources */,
+				86867A3E1AF6CF1200C2EFA8 /* KCMoreViewController.m in Sources */,
 				868679ED1AF69A8000C2EFA8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
