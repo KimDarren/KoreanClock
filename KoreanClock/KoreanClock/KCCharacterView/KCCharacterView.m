@@ -34,4 +34,17 @@
     }];
 }
 
+#pragma mark - Set
+
+- (void)setStatus:(KCCharacterViewStatus)status
+{
+    _status = status;
+    
+    if (_status == KCCharacterViewStatusOff) {
+        _characterLabel.textColor = [UIColor darkGrayColor];
+    } else {
+        _characterLabel.textColor = [UIColor whiteColor];
+    }
+}
+
 @end

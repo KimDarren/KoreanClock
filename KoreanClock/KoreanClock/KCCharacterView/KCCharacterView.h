@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, KCCharacterViewStatus) {
+    KCCharacterViewStatusOff,
+    KCCharacterViewStatusOn
+};
+
 @interface KCCharacterView : UIView
 
+@property (nonatomic) KCCharacterViewStatus status;
 @property (strong, nonatomic) UILabel *characterLabel;
 
 - (instancetype)init;
