@@ -11,9 +11,16 @@
 @interface KCDataUtility : NSObject
 
 + (NSArray *)hourCharacters;
++ (NSArray *)hourRawCharacters;
+
 + (NSArray *)minuteCharacters;
++ (NSArray *)minuteRawCharacters;
 
 + (NSArray *)characters;
 + (NSArray *)rawCharacters;
+
++ (NSArray *)tagsWithHour:(NSInteger)hour;
++ (NSArray *)tagsWithRawCharacters:(NSArray *)raws andHour:(NSInteger)hour;
++ (NSArray *)tagswithMinute:(NSInteger)minute;
 
 @end

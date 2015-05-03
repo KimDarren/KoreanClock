@@ -37,6 +37,34 @@
     return characters;
 }
 
++ (NSArray *)hourRawCharacters
+{
+    NSArray *characters = [self hourCharacters];
+    NSMutableArray *rawCharacters = [NSMutableArray new];
+    
+    for (NSArray *array in characters) {
+        for (NSString *character in array) {
+            [rawCharacters addObject:character];
+        }
+    }
+    
+    return rawCharacters;
+}
+
++ (NSArray *)minuteRawCharacters
+{
+    NSArray *characters = [self minuteCharacters];
+    NSMutableArray *rawCharacters = [NSMutableArray new];
+    
+    for (NSArray *array in characters) {
+        for (NSString *character in array) {
+            [rawCharacters addObject:character];
+        }
+    }
+    
+    return rawCharacters;
+}
+
 + (NSArray *)rawCharacters
 {
     NSArray *characters = [self characters];
