@@ -13,16 +13,34 @@
 
 @implementation KCCharacterView
 
+#pragma mark - Initialize
+
+- (void)initialize
+{
+    _characterLabel = [[UILabel alloc] init];
+    _characterLabel.textAlignment = NSTextAlignmentCenter;
+    _characterLabel.textColor = [UIColor darkGrayColor];
+    
+    [self addSubview:_characterLabel];
+    [self makeAutoLayoutConstraints];
+}
+
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        _characterLabel = [[UILabel alloc] init];
-        _characterLabel.textAlignment = NSTextAlignmentCenter;
-        _characterLabel.textColor = [UIColor darkGrayColor];
-        
-        [self addSubview:_characterLabel];
-        [self makeAutoLayoutConstraints];
+        [self initialize];
+    }
+    return self;
+}
+
+- (instancetype)initWithCharacter:(NSString *)character
+{
+    self = [super init];
+    if (self) {
+        [self initialize];
+        _character = character;
+        _characterLabel.text = _character;
     }
     return self;
 }

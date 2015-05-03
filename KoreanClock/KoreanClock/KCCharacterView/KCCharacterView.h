@@ -16,8 +16,11 @@ typedef NS_ENUM(NSInteger, KCCharacterViewStatus) {
 @interface KCCharacterView : UIView
 
 @property (nonatomic) KCCharacterViewStatus status;
+
+@property (strong, nonatomic) NSString *character;
 @property (strong, nonatomic) UILabel *characterLabel;
 
 - (instancetype)init;
+- (instancetype)initWithCharacter:(NSString *)character;
 
 @end
