@@ -809,6 +809,7 @@
 				86867A391AF6CDEB00C2EFA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
