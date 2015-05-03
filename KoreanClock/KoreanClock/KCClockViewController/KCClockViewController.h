@@ -10,4 +10,6 @@
 
 @interface KCClockViewController : UIViewController
 
+- (instancetype)init;
+
 @end
