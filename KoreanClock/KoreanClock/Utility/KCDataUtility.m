@@ -152,6 +152,10 @@
     NSArray *minutes = [self minuteCharacters];
     NSMutableArray *tags = [NSMutableArray new];
     
+    if (minute != 0) {
+        [tags addObject:@29];
+    }
+    
     NSArray *firstArray = minutes[0];
     NSMutableArray *otherArray = [[NSMutableArray alloc] initWithArray:minutes[1]];
     for (NSString *character in minutes[2]) {

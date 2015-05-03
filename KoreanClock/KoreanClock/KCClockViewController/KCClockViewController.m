@@ -37,14 +37,17 @@
         _characters = [KCDataUtility characters];
         _rawCharacters = [KCDataUtility rawCharacters];
         
+        
         CGFloat width = [UIScreen mainScreen].bounds.size.width/5.0f;
+        CGFloat firstY = ([UIScreen mainScreen].bounds.size.height - width*6.0f)/2.0f;
+        
         NSInteger count = 0;
         for (NSArray *lines in _characters) {
             NSInteger y = count/5;
             for (NSString *character in lines) {
                 NSInteger x = count%5;
                 KCCharacterView *characterView = [[KCCharacterView alloc] initWithCharacter:character];
-                characterView.frame = CGRectMake(width*x, 40 + width*y, width, width);
+                characterView.frame = CGRectMake(width*x, firstY + width*y, width, width);
                 characterView.tag = count++;
                 characterView.tag += 100;
                 [self.view addSubview:characterView];
@@ -91,15 +94,17 @@
             KCCharacterView *tagView = (KCCharacterView *)[self.view viewWithTag:100 + tagInteger];
             tagView.status = KCCharacterViewStatusOn;
         }
-        
-        KCCharacterView *bunView = (KCCharacterView *)[self.view viewWithTag:100 + 29];
-        bunView.status = KCCharacterViewStatusOn;
     }
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 @end
