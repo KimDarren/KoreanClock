@@ -8,14 +8,30 @@
 
 #import "KCCharacterView.h"
 
+// Library
+#import <Masonry/Masonry.h>
+
 @implementation KCCharacterView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _characterLabel = [[UILabel alloc] init];
+        _characterLabel.textAlignment = NSTextAlignmentCenter;
+        _characterLabel.textColor = [UIColor darkGrayColor];
+        
+        [self addSubview:_characterLabel];
+        [self makeAutoLayoutConstraints];
+    }
+    return self;
 }
-*/
+
+- (void)makeAutoLayoutConstraints
+{
+    [_characterLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self);
+    }];
+}
 
 @end

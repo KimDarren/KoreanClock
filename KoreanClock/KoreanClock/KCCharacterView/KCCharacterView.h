@@ -10,4 +10,8 @@
 
 @interface KCCharacterView : UIView
 
+@property (strong, nonatomic) UILabel *characterLabel;
+
+- (instancetype)init;
+
 @end
