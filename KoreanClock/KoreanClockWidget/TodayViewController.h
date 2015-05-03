@@ -10,4 +10,6 @@
 
 @interface TodayViewController : UIViewController
 
+@property (nonatomic, strong) IBOutletCollection(UILabel) NSArray *labels;
+
 @end
