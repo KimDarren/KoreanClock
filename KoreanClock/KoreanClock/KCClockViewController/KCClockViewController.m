@@ -8,6 +8,9 @@
 
 #import "KCClockViewController.h"
 
+// Controller
+#import "KCMoreViewController.h"
+
 // View
 #import "KCCharacterView.h"
 
@@ -37,6 +40,12 @@
         _characters = [KCDataUtility characters];
         _rawCharacters = [KCDataUtility rawCharacters];
         
+        UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(goToMoreViewController)];
+        swipe.direction = UISwipeGestureRecognizerDirectionUp;
+        [self.view addGestureRecognizer:swipe];
+        
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(goToMoreViewController)];
+        [self.view addGestureRecognizer:tap];
         
         CGFloat width = [UIScreen mainScreen].bounds.size.width/5.0f;
         CGFloat firstY = ([UIScreen mainScreen].bounds.size.height - width*6.0f)/2.0f;
@@ -59,6 +68,12 @@
         [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(reloadTime) userInfo:nil repeats:YES];
     }
     return self;
+}
+
+- (void)goToMoreViewController
+{
+    KCMoreViewController *more = [[KCMoreViewController alloc] init];
+    [self presentViewController:more animated:YES completion:nil];
 }
 
 - (void)reloadTime
