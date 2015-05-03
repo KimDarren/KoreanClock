@@ -14,6 +14,7 @@
 		868679F11AF69AE300C2EFA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 868679F01AF69AE300C2EFA8 /* AppDelegate.m */; };
 		868679F51AF69B3600C2EFA8 /* KCClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 868679F41AF69B3600C2EFA8 /* KCClockViewController.m */; };
 		868679F91AF69F9300C2EFA8 /* KCCharacterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 868679F81AF69F9300C2EFA8 /* KCCharacterView.m */; };
+		868679FD1AF6A08400C2EFA8 /* KCDataUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 868679FC1AF6A08400C2EFA8 /* KCDataUtility.m */; };
 		A47A447117D35F6B5A6DA503 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97064E658F7A481890EE4A8C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		868679F41AF69B3600C2EFA8 /* KCClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCClockViewController.m; sourceTree = "<group>"; };
 		868679F71AF69F9300C2EFA8 /* KCCharacterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCCharacterView.h; sourceTree = "<group>"; };
 		868679F81AF69F9300C2EFA8 /* KCCharacterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCCharacterView.m; sourceTree = "<group>"; };
+		868679FB1AF6A08400C2EFA8 /* KCDataUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCDataUtility.h; sourceTree = "<group>"; };
+		868679FC1AF6A08400C2EFA8 /* KCDataUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCDataUtility.m; sourceTree = "<group>"; };
 		92D27B036FFA9A784B642CA2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		97064E658F7A481890EE4A8C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EB4B66FD862019B4E17408 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				868679EE1AF69AE300C2EFA8 /* AppDelegate */,
+				868679FA1AF6A07800C2EFA8 /* Utility */,
 				868679F61AF69F7D00C2EFA8 /* KCCharacterView */,
 				868679F21AF69B2C00C2EFA8 /* KCClockViewController */,
 				868679E71AF69A8000C2EFA8 /* Supporting Files */,
@@ -119,6 +123,15 @@
 				868679F81AF69F9300C2EFA8 /* KCCharacterView.m */,
 			);
 			path = KCCharacterView;
+			sourceTree = "<group>";
+		};
+		868679FA1AF6A07800C2EFA8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				868679FB1AF6A08400C2EFA8 /* KCDataUtility.h */,
+				868679FC1AF6A08400C2EFA8 /* KCDataUtility.m */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		E48EB0CD101355F57DC40C31 /* Pods */ = {
@@ -236,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				868679F51AF69B3600C2EFA8 /* KCClockViewController.m in Sources */,
+				868679FD1AF6A08400C2EFA8 /* KCDataUtility.m in Sources */,
 				868679F11AF69AE300C2EFA8 /* AppDelegate.m in Sources */,
 				868679F91AF69F9300C2EFA8 /* KCCharacterView.m in Sources */,
 				868679ED1AF69A8000C2EFA8 /* main.m in Sources */,
