@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "KCClockViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,15 @@
 
 @implementation AppDelegate
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    KCClockViewController *clockViewController = [[KCClockViewController alloc] init];
+    self.window.rootViewController = clockViewController;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

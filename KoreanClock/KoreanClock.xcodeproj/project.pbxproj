@@ -12,6 +12,7 @@
 		868679EC1AF69A8000C2EFA8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 868679E91AF69A8000C2EFA8 /* Info.plist */; };
 		868679ED1AF69A8000C2EFA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 868679EA1AF69A8000C2EFA8 /* main.m */; };
 		868679F11AF69AE300C2EFA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 868679F01AF69AE300C2EFA8 /* AppDelegate.m */; };
+		868679F51AF69B3600C2EFA8 /* KCClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 868679F41AF69B3600C2EFA8 /* KCClockViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		868679EA1AF69A8000C2EFA8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		868679EF1AF69AE300C2EFA8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		868679F01AF69AE300C2EFA8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		868679F31AF69B3600C2EFA8 /* KCClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCClockViewController.h; sourceTree = "<group>"; };
+		868679F41AF69B3600C2EFA8 /* KCClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCClockViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				868679EE1AF69AE300C2EFA8 /* AppDelegate */,
+				868679F21AF69B2C00C2EFA8 /* KCClockViewController */,
 				868679E71AF69A8000C2EFA8 /* Supporting Files */,
 				868679D01AF6995900C2EFA8 /* LaunchScreen.xib */,
 			);
@@ -78,6 +82,15 @@
 				868679F01AF69AE300C2EFA8 /* AppDelegate.m */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		868679F21AF69B2C00C2EFA8 /* KCClockViewController */ = {
+			isa = PBXGroup;
+			children = (
+				868679F31AF69B3600C2EFA8 /* KCClockViewController.h */,
+				868679F41AF69B3600C2EFA8 /* KCClockViewController.m */,
+			);
+			path = KCClockViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868679F51AF69B3600C2EFA8 /* KCClockViewController.m in Sources */,
 				868679F11AF69AE300C2EFA8 /* AppDelegate.m in Sources */,
 				868679ED1AF69A8000C2EFA8 /* main.m in Sources */,
 			);
@@ -253,7 +267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = KoreanClock/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/KoreanClock/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -263,7 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = KoreanClock/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/KoreanClock/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
