@@ -64,6 +64,12 @@
     NSInteger fourthDigit = [[string substringWithRange:NSMakeRange(3, 1)] integerValue];
     
     [_labels[0] setTextColor:(firstDigit) ? [UIColor whiteColor] : [UIColor darkGrayColor]];    // 열
+    
+    if (firstDigit == 0 && secondDigit == 0) {
+        [_labels[0] setTextColor:[UIColor whiteColor]]; // 열
+        [_labels[5] setTextColor:[UIColor whiteColor]]; // 두
+    }
+    
     [_labels[19] setTextColor:(!thirdDigit) ? [UIColor darkGrayColor] : [UIColor whiteColor]];    // 십
     [_labels[29] setTextColor:(!thirdDigit && !fourthDigit) ? [UIColor darkGrayColor] : [UIColor whiteColor]];  // 분
     
