@@ -22,6 +22,10 @@
 		86867A191AF6C7DE00C2EFA8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86867A171AF6C7DE00C2EFA8 /* Interface.storyboard */; };
 		86867A1B1AF6C7DE00C2EFA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86867A1A1AF6C7DE00C2EFA8 /* Images.xcassets */; };
 		86867A1E1AF6C7DE00C2EFA8 /* KoreanClock WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 86867A051AF6C7DE00C2EFA8 /* KoreanClock WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		86867A2C1AF6CDEA00C2EFA8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86867A2B1AF6CDEA00C2EFA8 /* NotificationCenter.framework */; };
+		86867A321AF6CDEB00C2EFA8 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86867A311AF6CDEB00C2EFA8 /* TodayViewController.m */; };
+		86867A341AF6CDEB00C2EFA8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86867A331AF6CDEB00C2EFA8 /* MainInterface.storyboard */; };
+		86867A371AF6CDEB00C2EFA8 /* KoreanClockWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 86867A2A1AF6CDEA00C2EFA8 /* KoreanClockWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A47A447117D35F6B5A6DA503 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97064E658F7A481890EE4A8C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +44,13 @@
 			remoteGlobalIDString = 86867A041AF6C7DE00C2EFA8;
 			remoteInfo = "KoreanClock WatchKit Extension";
 		};
+		86867A351AF6CDEB00C2EFA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 868679B61AF6995900C2EFA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86867A291AF6CDEA00C2EFA8;
+			remoteInfo = KoreanClockWidget;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +61,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				86867A1E1AF6C7DE00C2EFA8 /* KoreanClock WatchKit Extension.appex in Embed App Extensions */,
+				86867A371AF6CDEB00C2EFA8 /* KoreanClockWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +93,12 @@
 		86867A161AF6C7DE00C2EFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86867A181AF6C7DE00C2EFA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		86867A1A1AF6C7DE00C2EFA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		86867A2A1AF6CDEA00C2EFA8 /* KoreanClockWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KoreanClockWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		86867A2B1AF6CDEA00C2EFA8 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		86867A2F1AF6CDEB00C2EFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86867A301AF6CDEB00C2EFA8 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		86867A311AF6CDEB00C2EFA8 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		86867A331AF6CDEB00C2EFA8 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		92D27B036FFA9A784B642CA2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		97064E658F7A481890EE4A8C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8EB4B66FD862019B4E17408 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +120,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86867A271AF6CDEA00C2EFA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86867A2C1AF6CDEA00C2EFA8 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -109,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				97064E658F7A481890EE4A8C /* libPods.a */,
+				86867A2B1AF6CDEA00C2EFA8 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +146,7 @@
 				868679C01AF6995900C2EFA8 /* KoreanClock */,
 				86867A061AF6C7DE00C2EFA8 /* KoreanClock WatchKit Extension */,
 				86867A141AF6C7DE00C2EFA8 /* KoreanClock WatchKit App */,
+				86867A2D1AF6CDEB00C2EFA8 /* KoreanClockWidget */,
 				868679BF1AF6995900C2EFA8 /* Products */,
 				E48EB0CD101355F57DC40C31 /* Pods */,
 				7D106E44374BD1F415AE5DB1 /* Frameworks */,
@@ -131,6 +159,7 @@
 				868679BE1AF6995900C2EFA8 /* KoreanClock.app */,
 				86867A051AF6C7DE00C2EFA8 /* KoreanClock WatchKit Extension.appex */,
 				86867A101AF6C7DE00C2EFA8 /* KoreanClock WatchKit App.app */,
+				86867A2A1AF6CDEA00C2EFA8 /* KoreanClockWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,6 +262,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		86867A2D1AF6CDEB00C2EFA8 /* KoreanClockWidget */ = {
+			isa = PBXGroup;
+			children = (
+				86867A301AF6CDEB00C2EFA8 /* TodayViewController.h */,
+				86867A311AF6CDEB00C2EFA8 /* TodayViewController.m */,
+				86867A331AF6CDEB00C2EFA8 /* MainInterface.storyboard */,
+				86867A2E1AF6CDEB00C2EFA8 /* Supporting Files */,
+			);
+			path = KoreanClockWidget;
+			sourceTree = "<group>";
+		};
+		86867A2E1AF6CDEB00C2EFA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86867A2F1AF6CDEB00C2EFA8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E48EB0CD101355F57DC40C31 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +308,7 @@
 			);
 			dependencies = (
 				86867A1D1AF6C7DE00C2EFA8 /* PBXTargetDependency */,
+				86867A361AF6CDEB00C2EFA8 /* PBXTargetDependency */,
 			);
 			name = KoreanClock;
 			productName = KoreanClock;
@@ -299,6 +348,23 @@
 			productReference = 86867A101AF6C7DE00C2EFA8 /* KoreanClock WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp";
 		};
+		86867A291AF6CDEA00C2EFA8 /* KoreanClockWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86867A3A1AF6CDEB00C2EFA8 /* Build configuration list for PBXNativeTarget "KoreanClockWidget" */;
+			buildPhases = (
+				86867A261AF6CDEA00C2EFA8 /* Sources */,
+				86867A271AF6CDEA00C2EFA8 /* Frameworks */,
+				86867A281AF6CDEA00C2EFA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KoreanClockWidget;
+			productName = KoreanClockWidget;
+			productReference = 86867A2A1AF6CDEA00C2EFA8 /* KoreanClockWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -315,6 +381,9 @@
 						CreatedOnToolsVersion = 6.3.1;
 					};
 					86867A0F1AF6C7DE00C2EFA8 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					86867A291AF6CDEA00C2EFA8 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
@@ -335,6 +404,7 @@
 				868679BD1AF6995900C2EFA8 /* KoreanClock */,
 				86867A041AF6C7DE00C2EFA8 /* KoreanClock WatchKit Extension */,
 				86867A0F1AF6C7DE00C2EFA8 /* KoreanClock WatchKit App */,
+				86867A291AF6CDEA00C2EFA8 /* KoreanClockWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -365,6 +435,14 @@
 			files = (
 				86867A191AF6C7DE00C2EFA8 /* Interface.storyboard in Resources */,
 				86867A1B1AF6C7DE00C2EFA8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86867A281AF6CDEA00C2EFA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86867A341AF6CDEB00C2EFA8 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +503,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86867A261AF6CDEA00C2EFA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86867A321AF6CDEB00C2EFA8 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -437,6 +523,11 @@
 			isa = PBXTargetDependency;
 			target = 86867A041AF6C7DE00C2EFA8 /* KoreanClock WatchKit Extension */;
 			targetProxy = 86867A1C1AF6C7DE00C2EFA8 /* PBXContainerItemProxy */;
+		};
+		86867A361AF6CDEB00C2EFA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86867A291AF6CDEA00C2EFA8 /* KoreanClockWidget */;
+			targetProxy = 86867A351AF6CDEB00C2EFA8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -620,6 +711,32 @@
 			};
 			name = Release;
 		};
+		86867A381AF6CDEB00C2EFA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KoreanClockWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		86867A391AF6CDEB00C2EFA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KoreanClockWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -648,12 +765,22 @@
 				86867A221AF6C7DE00C2EFA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86867A241AF6C7DE00C2EFA8 /* Build configuration list for PBXNativeTarget "KoreanClock WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86867A1F1AF6C7DE00C2EFA8 /* Debug */,
 				86867A201AF6C7DE00C2EFA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86867A3A1AF6CDEB00C2EFA8 /* Build configuration list for PBXNativeTarget "KoreanClockWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86867A381AF6CDEB00C2EFA8 /* Debug */,
+				86867A391AF6CDEB00C2EFA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
