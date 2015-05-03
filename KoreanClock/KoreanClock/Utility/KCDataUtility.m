@@ -37,4 +37,18 @@
     return characters;
 }
 
++ (NSArray *)rawCharacters
+{
+    NSArray *characters = [self characters];
+    NSMutableArray *rawCharacters = [NSMutableArray new];
+    
+    for (NSArray *array in characters) {
+        for (NSString *character in array) {
+            [rawCharacters addObject:character];
+        }
+    }
+    
+    return rawCharacters;
+}
+
 @end

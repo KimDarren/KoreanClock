@@ -14,5 +14,6 @@
 + (NSArray *)minuteCharacters;
 
 + (NSArray *)characters;
++ (NSArray *)rawCharacters;
 
 @end
